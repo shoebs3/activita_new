@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteBase /
+
+RewriteRule ^kontakt.html$ rhein-main/kontakt.php

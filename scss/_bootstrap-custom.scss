@@ -1,0 +1,82 @@
+//== Grid system
+
+$grid-columns:              16;
+$grid-gutter-width:         30px;
+
+//== Container sizes
+
+// Small screen / tablet
+$container-tablet:             (740px + $grid-gutter-width);
+
+// Medium screen / desktop
+$container-desktop:            (980px + $grid-gutter-width);
+
+// Large screen / wide desktop
+$container-large-desktop:      (980px + $grid-gutter-width);
+
+//== Media queries breakpoints
+
+$screen-md:1024px;
+$screen-sm:768px;
+
+
+//== Typography
+
+$font-family-sans-serif:  'Roboto Condensed', Helvetica, Arial, sans-serif;
+$font-size-base:          15px;
+$line-height-base:        1.33334;
+$border-radius-base:0;
+
+$font-size-h1:1.200em;
+$font-size-h2:1em;
+$headings-font-weight:700;
+$headings-line-height:1.333333333333;
+
+//== Scaffolding
+
+$body-bg:#fff;
+$text-color:#747474;
+$link-color:#df8119;
+$link-hover-color:#df8119;
+
+//== Navbar
+
+$navbar-height:auto;
+$navbar-margin-bottom:0;
+$navbar-padding-horizontal:0;
+$navbar-padding-vertical:0;
+
+$navbar-default-color:#494949;
+$navbar-default-bg:transparent;
+$navbar-default-border:transparent;
+
+// Navbar links
+$navbar-default-link-color:#494949;
+$navbar-default-link-hover-color:lighten(#494949, 30%);
+
+//== Buttons
+
+$btn-default-color:#fff;
+$btn-default-bg:#f39122;
+$btn-default-border:#f39122;
+
+$btn-primary-color:#f39122;
+$btn-primary-bg:#fff;
+$btn-primary-border:#f39122;
+
+$btn-info-color:#df8117;
+$btn-info-bg:#f0f0f0;
+$btn-info-border:#f0f0f0;
+
+//== Panels
+
+//** Border color for elements within panels
+$panel-inner-border:#adadad;
+$panel-heading-padding:15px 35px 14px;
+$panel-default-border:#adadad;
+$panel-default-heading-bg:#a3a3a3;
+
+//** Blockquote font size
+$blockquote-font-size:1em;
+//** Blockquote border color
+$blockquote-border-color:transparent;

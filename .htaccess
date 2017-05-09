@@ -1,0 +1,91 @@
+RewriteEngine On
+
+RewriteBase /
+
+RewriteRule ^kontakt.html$ kontakt.php
+
+Redirect 301 /rheinmain http://www.actiovita.de/rhein-main
+
+RewriteCond %{HTTP_HOST} !^www\.actiovita\.de$
+RewriteRule ^(.*)$ http://www.actiovita.de/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST}   ^www.actiovita.de$ [NC] 
+RewriteRule   ^index.php$ http://www.actiovita.de/  [R=301,L] 
+
+RewriteCond %{HTTP_HOST}   ^www.actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/actiovita/index.php$ http://www.actiovita.de/actiovita_grundsaetzliches.html  [R=301,L] 
+RewriteCond %{HTTP_HOST}   ^actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/actiovita/index.php$ http://actiovita.de/actiovita_grundsaetzliches.html  [R=301,L] 
+
+RewriteCond %{HTTP_HOST}   ^www.actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/actiovita/betreuungskonzept.php$ http://www.actiovita.de/actiovita_betreuungskonzept.html  [R=301,L]
+RewriteCond %{HTTP_HOST}   ^actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/actiovita/betreuungskonzept.php$ http://actiovita.de/actiovita_betreuungskonzept.html  [R=301,L]
+
+RewriteCond %{HTTP_HOST}   ^www.actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/actiovita/rahmenbedingungen.php$ http://www.actiovita.de/actiovita_gesetzliche-rahmenbedingungen.html  [R=301,L]
+RewriteCond %{HTTP_HOST}   ^actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/actiovita/rahmenbedingungen.php$ http://actiovita.de/actiovita_gesetzliche-rahmenbedingungen.html  [R=301,L]
+
+RewriteCond %{HTTP_HOST}   ^www.actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/betreuung/index.php$ http://www.actiovita.de/betreuung_vorgehen.html  [R=301,L]
+RewriteCond %{HTTP_HOST}   ^actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/betreuung/index.php$ http://actiovita.de/betreuung_vorgehen.html  [R=301,L]
+
+RewriteCond %{HTTP_HOST}   ^www.actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/betreuung/aufgaben.php$ http://www.actiovita.de/betreuung_aufgabenbereiche.html  [R=301,L]
+RewriteCond %{HTTP_HOST}   ^actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/betreuung/aufgaben.php$ http:/actiovita.de/betreuung_aufgabenbereiche.html  [R=301,L]
+
+RewriteCond %{HTTP_HOST}   ^www.actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/betreuung/kosten.php$ http://www.actiovita.de/betreuung_kosten.html  [R=301,L]
+RewriteCond %{HTTP_HOST}   ^actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/betreuung/kosten.php$ http://actiovita.de/betreuung_kosten.html  [R=301,L]
+
+RewriteCond %{HTTP_HOST}   ^www.actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/informationen/index.php$ http://www.actiovita.de/info_pflegebeduerftigkeit.html  [R=301,L]
+RewriteCond %{HTTP_HOST}   ^actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/informationen/index.php$ http://actiovita.de/info_pflegebeduerftigkeit.htmll  [R=301,L]
+
+RewriteCond %{HTTP_HOST}   ^www.actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/informationen/pflegestufe.php$ http://www.actiovita.de/info_pflegestufen.html  [R=301,L]
+RewriteCond %{HTTP_HOST}   ^actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/informationen/pflegestufe.php$ http://actiovita.de/info_pflegestufen.html  [R=301,L]
+
+RewriteCond %{HTTP_HOST}   ^www.actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/informationen/pflegegeld.php$ http://www.actiovita.de/info_pflegesachleistungen-pflegegeld.html  [R=301,L]
+RewriteCond %{HTTP_HOST}   ^actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/informationen/pflegegeld.php$ http://actiovita.de/info_pflegesachleistungen-pflegegeld.html  [R=301,L]
+
+RewriteCond %{HTTP_HOST}   ^www.actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/presse/index.php$ http://www.actiovita.de/actiovita_stiftungwarentest.html  [R=301,L]
+RewriteCond %{HTTP_HOST}   ^actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/presse/index.php$ http://actiovita.de/actiovita_stiftungwarentest.html  [R=301,L]
+
+RewriteCond %{HTTP_HOST}   ^www.actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/kontakt.php$ http://www.actiovita.de/kontakt.php  [R=301,L]
+RewriteCond %{HTTP_HOST}   ^actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/kontakt.php$ http://actiovita.de/kontakt.php  [R=301,L]
+
+RewriteCond %{HTTP_HOST}   ^www.actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/impressum.php$ http://www.actiovita.de/impressum.html  [R=301,L]
+RewriteCond %{HTTP_HOST}   ^actiovita.de$ [NC] 
+RewriteRule   ^bundesweit/impressum.php$ http://www.actiovita.de/impressum.html  [R=301,L]
+
+RewriteCond %{HTTP_HOST}   ^www.actiovita.de$ [NC] 
+RewriteRule   ^info_pflegebeduerftigkeit.html$ info_pflegebeduerftigkeit-grundpflege.html  [R=301,L]
+RewriteCond %{HTTP_HOST}   ^actiovita.de$ [NC] 
+RewriteRule   ^info_pflegebeduerftigkeit.html$ info_pflegebeduerftigkeit-grundpflege.html  [R=301,L]
+
+
+RedirectPermanent /rhein-main/actiovita/index.php http://www.actiovita.de/actiovita_grundsaetzliches.html
+RedirectPermanent /rhein-main/actiovita/betreuungskonzept.php http://www.actiovita.de/rhein-main/actiovita_vorgehensweise.html
+RedirectPermanent /rhein-main/actiovita/actiovita-vor-ort.php http://www.actiovita.de/rhein-main/actiovita_vor-ort.html
+RedirectPermanent /rhein-main/betreuung/index.php http://www.actiovita.de/rhein-main/betreuung_24-stunden.html
+RedirectPermanent /rhein-main/betreuung/aufgaben.php http://www.actiovita.de/rhein-main/betreuung_aufgabenbereiche.html
+RedirectPermanent /rhein-main/betreuung/kosten.php http://www.actiovita.de/rhein-main/info_pflegesachleistungen-pflegegeld.html
+RedirectPermanent /rhein-main/ambulant/index.php http://www.actiovita.de/rhein-main/ambulante-pflege.html
+RedirectPermanent /rhein-main/informationen/index.php http://www.actiovita.de/rhein-main/info_pflegebeduerftigkeit.html
+RedirectPermanent /rhein-main/informationen/pflegestufe.php http://www.actiovita.de/rhein-main/info_pflegestufen.html
+RedirectPermanent /rhein-main/informationen/pflegegeld.php http://www.actiovita.de/rhein-main/info_pflegesachleistungen-pflegegeld.html
+RedirectPermanent /rhein-main/presse/index.php http://www.actiovita.de/rhein-main/actiovita_stiftungwarentest.html
